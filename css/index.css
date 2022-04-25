@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+.contanier {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+/* ====== header ====== */
+header {
+    width: 100%;
+    height: 50px;
+}
+
+header h1 {
+    position: relative;
+    margin: 10px;
+    /* background-color: bisque; */
+}
+
+.right-menu  > a {
+    position: absolute;
+    top: 5px; right: 10px;
+    width: 30px;
+    height: 30px;
+    /* background-color: aqua; */
+}
+
+.right-menu  > a > span {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    margin-top: 10px;
+    background-color:rgb(53, 53, 226);
+}
+
+.right-menu  > a > span:nth-child(2) {
+    margin-top: 5px;
+}
+
+.right-menu  > a > span:nth-child(3) {
+    margin-top: 5px;
+}
+
+/*gnb*/
+header nav {
+    display: none;
+    width: 100%;
+    background-color: rgb(53, 53, 226);
+}
+
+.gnb {
+    display: flex;
+    flex-direction: column;
+}
+
+.gnb > li {
+    width: 100%;
+}
+
+.gnb > li > a {
+    font-weight: 600;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid rgba(0, 4, 255, 0.3); /*흰색선에 투명도*/
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background-color: rgb(53, 53, 226);
+}
+
+/*====== main =====*/
+
+/* slide */
+main .slide > img {
+    width: 100%;
+}
+
+/* section .weare-txt */
+.weare-txt  h2 {
+    margin-top: 100px;
+    background-color: blanchedalmond;
+}
+
+.weare-txt .txt {
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* section .promotion */
+
+.list-flex-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-flex-box > div {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.list-flex-box > div > img{
+    width: 70px;
+}
+
+/* section .work -------------여기서 다시*/ 
+
+.work-flex-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-flex-box > div {
+    width: 100%;
+    position: relative;
+}
+
+.work-flex-box > div > img {
+    margin-top: -4px;
+    width: 100%;
+}
+
+.work-txt p {
+    position: absolute;
+    top:0; left: 0;
+    width:100%; height: 100%;
+    padding-left: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.work-txt p:hover {
+    opacity: 1;
+}
+
+.work-txt span:first-child {
+    font-size: 20px;
+    color: white;
+}
+
+.work-txt span:last-child {
+    top: 30px;
+    font-size: 12px;
+    color: white;
+}
+
+.work-txt::before {
+    position: absolute;
+    top: 0; left: 0;
+    content: '';
+    margin-top: -4px;
+    width: 0%; height: 100%;
+    background-color: rgb(35, 35, 179);
+    opacity: 0;
+    transition: width 0.5s;
+}
+
+.work-txt:hover::before {
+    opacity: 0.7;
+    width: 100%;
+}
+
+/* blog */
+
+.blog-flex-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-flex-box > div {
+    width: 100%;
+    margin: 10px;
+}
+
+.blog-flex-box > div > img {
+    width: 90%;
+}
+
+
+/* CONTACT */
+
+.contact fieldset {
+    border: none;
+}
+
+legend {
+    display: none;
+}
+
+label {
+    font-size: 0;  
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding-bottom: 10px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    font: 12px '맑은고딕';
+    color: rgb(35, 35, 179);
+}
+
+.bnt {
+    text-align: right;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.bnt button {
+    width: 130px;
+    height: 40px;
+    border: 0;
+    color: white;
+    background-color: rgb(35, 35, 179);
+}
